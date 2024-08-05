@@ -36,6 +36,7 @@ export function usePets() {
             pets.value[index] = response.data;
             pet.value.name = '';
             pet.value.status = '';
+            pet.value.id = '';
         } catch (error) {
             console.error('Failed to update pet:', error);
         }
